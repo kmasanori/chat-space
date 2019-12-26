@@ -58,8 +58,8 @@ Things you may want to cover:
 
 |Column|Type|Options|
 |------|----|-------|
-|group_id|integer|null: false, references :user, foreign_key: true|
-|user_id|integer|null: false, references :group, foreign_key: true|
+|group_id|references|null: false, foreign_key: true|
+|user_id|references|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :group
@@ -74,8 +74,8 @@ Things you may want to cover:
 |------|----|-------|
 |body|text||
 |image|string||
-|group_id|integer|null: false, references :user, foreign_key: true|
-|user_id|integer|null: false, references :group, foreign_key: true|
+|group_id|references|null: false, foreign_key: true|
+|user_id|references|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :group
