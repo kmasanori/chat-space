@@ -1,0 +1,20 @@
+.messages {
+  @include __base(calc(100vh - 190px), auto, #fafafa);
+  padding: 35px 0 0 40px;
+}
+
+.message {
+  margin-bottom: 46px;
+  &__info-name {
+    display: inline-block;
+    @include __font(16px, $grayColor, bold);
+  }
+  &__info-when {
+    display: inline-block;
+    @include __font(12px, $silverColor, normal);
+  }
+  &__content {
+    @include __font(14px, #434A54, normal);
+    margin-top: 12px;
+  }
+}

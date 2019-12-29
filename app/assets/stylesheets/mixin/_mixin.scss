@@ -1,0 +1,26 @@
+@mixin __base($height, $width, $color) {
+  height: $height;
+  width: $width;
+  background-color: $color;
+}
+
+@mixin __justify($display, $justify-content) {
+  display: $display;
+  justify-content: $justify-content;
+}
+
+@mixin __align($display, $align-items) {
+  display: $display;
+  align-items: $align-items;
+}
+
+@mixin __font($size, $color, $weight) {
+  font-size: $size;
+  color: $color;
+  font-weight: $weight;
+}
+
+@mixin __font-center($line-height, $text-align) {
+  line-height: $line-height;
+  text-align: $text-align;
+}

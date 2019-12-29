@@ -1,0 +1,43 @@
+.chat-main
+  .header
+    .header-box
+      .header-box__group
+        %p.header-box__group__name
+          TECH SUPER PRO
+        %p.header-box__group__member
+          Member : koshiro
+      = link_to "#", class: "header-box__btn" do
+        %p
+          Edit
+
+  .messages
+    .message
+      %p.message__info-name
+        koshiro
+      %p.message__info-when
+        2019/12/26(Thu)20:00:00
+      %p.message__content
+        Hey,guys.
+    .message
+      %p.message__info-name
+        koshiro
+      %p.message__info-when
+        2019/12/26(Thu)20:01:00
+      %p.message__content
+        Hello?
+    .message
+      %p.message__info-name
+        koshiro
+      %p.message__info-when
+        2019/12/26(Thu)20:01:30
+      %p.message__content
+        oh,only me here...
+
+  .form
+    %form.new-message
+      .input-box
+        %input{type: "text", class: "input-box__message", placeholder: "type a message"}
+        %label{class: "input-box__image"}
+          = icon('far', 'images')
+          %input{type: "file", class: "input-box__image__file"} 
+      %input{type: "submit", class: "submit-btn", value: "Send"}

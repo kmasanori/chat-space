@@ -1,0 +1,3 @@
+.chat-main {
+  @include __base(100vh, calc(100% - 300px), $whiteColor);
+}

@@ -1,0 +1,18 @@
+.groups {
+  @include __base(calc(100vh - 100px), auto, #2f3e51);
+  padding: $sidePadding;
+  padding-top: 20px;
+}
+
+.group {
+  display: block;
+  @include __base(auto, auto, transparent);
+  margin-bottom: 40px;
+  &__name {
+    @include __font(15px, $whiteColor, bold);
+    margin-bottom: 5px;
+  }
+  &__message {
+    @include __font(11px, $whiteColor, bold);
+  }
+}

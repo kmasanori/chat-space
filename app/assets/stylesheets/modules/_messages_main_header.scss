@@ -1,0 +1,29 @@
+.header {
+  @include __base(100px, auto, $whiteColor);
+  padding: $mainPadding;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.header-box {
+  @include __base(100%, auto, transparent);
+  @include __justify(flex, space-between);
+  &__group {
+    @include __base(auto, auto, transparent);
+    &__name {
+      padding: 35px 0 15px;
+      @include __font(20px, $grayColor, normal);
+    }
+    &__member {
+      @include __font(12px, $silverColor, normal);
+    }
+  }
+  &__btn {
+    display: block;
+    @include __base(38px, 70px, transparent);
+    padding: 0 20px;
+    margin-top: 30px;
+    border: 1px solid $blueColor;
+    @include __font(16px, $blueColor, normal);
+    @include __font-center(38px, center);
+  }    
+}

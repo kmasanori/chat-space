@@ -1,0 +1,37 @@
+.form {
+  @include __base(90px, 100%, #d2d2d2);
+  padding: $mainPadding;
+  @include __align(flex, center);
+}
+
+.new-message {
+  @include __base(50px, 100%, transparent);
+  @include __justify(flex, space-between);
+}
+
+.input-box {
+  @include __base(100%, 100%, transparent);
+  position: relative;
+  &__message {
+    @include __base(100%, 100%, $whiteColor);
+    padding: 0 40px 0 10px;
+    border-style: none;
+  }
+  &__image {
+    position: absolute;
+    top: 17px;
+    right: 10px;
+    cursor: pointer;
+    &__file {
+      display: none;
+    }
+  }
+}
+
+.submit-btn {
+  @include __base(100%, auto, $blueColor);
+  padding: 0 30px;
+  margin-left: 15px;
+  color: $whiteColor;
+  cursor: pointer;
+}
