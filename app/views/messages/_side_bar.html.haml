@@ -1,17 +1,29 @@
 .side-bar
-  .side-bar__user-info
-    .main-item
-      .main-item__name
+  .side-header
+    .header-block
+      %p.header-block__username
         koshiro
-      .main-item__icon
-        =link_to "#", class: "main-item__icon-btn" do
-          = icon('fas', 'edit',  class: "main-item__icon-btn--etit")
-        =link_to "#", class: "main-item__icon-btn" do
-          = icon('fas', 'cog',  class: "main-item__icon-btn--cog")
+      %ul.header-block__menu
+        %li.header-block__menu__edit-user
+          =link_to "#" do
+            = icon('fas', 'edit')
+        %li.header-block__menu__new-group
+          =link_to "#" do
+            = icon('fas', 'cog')
 
-  .side-bar__group-index
-    .group-block
-      .group-block__name
+  .groups
+    = link_to "#", class: "group" do
+      %p.group__name
         TECH EXPERT
-      .group-block__message
+      %p.group__message
         まだメッセージはありません。
+    = link_to "#", class: "group" do
+      %p.group__name
+        PROGRIT
+      %p.group__message
+        What the f***kkk
+    = link_to "#", class: "group" do
+      %p.group__name
+        Disney
+      %p.group__message
+        HAHA!
