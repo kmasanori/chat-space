@@ -1,6 +1,7 @@
 @import "reset";
-@import "config/all";
 @import "config/variable";
+@import "config/colors";
+@import "config/all";
 @import "mixin/mixin";
 @import "modules/wrapper";
 @import "modules/messages_side";
@@ -11,5 +12,6 @@
 @import "modules/messages_main_messages";
 @import "modules/messages_main_form";
 @import "modules/user";
+@import "modules/user_flash";
 @import "font-awesome-sprockets";
 @import "font-awesome";
