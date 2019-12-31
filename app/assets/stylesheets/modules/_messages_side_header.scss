@@ -13,7 +13,7 @@
   &__menu {
     @include __base(auto, 60px, transparent);
     @include __justify(flex, flex-end);
-    &__new-group {
+    &__edit-user {
       margin-left: 5px;
     }
     a {
