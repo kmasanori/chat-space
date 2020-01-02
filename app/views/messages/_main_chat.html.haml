@@ -11,27 +11,7 @@
           Edit
 
   .messages
-    .message
-      %p.message__info-name
-        koshiro
-      %p.message__info-when
-        2019/12/26(Thu)20:00:00
-      %p.message__content
-        Hey,guys.
-    .message
-      %p.message__info-name
-        koshiro
-      %p.message__info-when
-        2019/12/26(Thu)20:01:00
-      %p.message__content
-        Hello?
-    .message
-      %p.message__info-name
-        koshiro
-      %p.message__info-when
-        2019/12/26(Thu)20:01:30
-      %p.message__content
-        oh,only me here...
+    = render @messages
 
   .form
     = form_for [@group, @message] do |f|
@@ -41,16 +21,3 @@
           = icon('fas', 'image', class: 'icon')
           = f.file_field :image, class: 'hidden'
       = f.submit 'Send', class: 'form__submit'
-
-
-
-
-
-  -# .form
-  -#   = form_for [@group, @message] do |f|
-  -#     = f.text_field :content, class: 'message', placeholder: 'type a message'
-  -#     .form__mask  
-  -#       = f.label :image, class: 'form__mask__image' do
-  -#         = icon('fas', 'images')
-  -#         = f.file_field :image, class: 'form__mask__file'
-  -#     = f.submit 'Send', class: 'form__submit__btn'
