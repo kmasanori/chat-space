@@ -34,39 +34,3 @@
     padding: 0 30px;
   }
 }
-
-
-
-// .form {
-//   @include __base(90px, 100%, #d2d2d2);
-//   padding: $formPadding;
-//   @include __justify(flex, space-between);
-// }
-
-// .message {
-//   @include __base(100%, 100%, $whiteColor);
-//   padding: 0 40px 0 10px;
-//   border-style: none;
-//   position: relative;
-// }
-
-// .form__mask {
-//   position: absolute;
-//   top: 17px;
-//   right: 10px;
-//   &__image {
-//     cursor: pointer;
-//     &__file {
-//       display: none;
-//     }
-//   }
-// }
-
-
-// .submit-btn {
-//   @include __base(100%, auto, $blueColor);
-//   padding: 0 30px;
-//   margin-left: 15px;
-//   color: $whiteColor;
-//   cursor: pointer;
-// }
