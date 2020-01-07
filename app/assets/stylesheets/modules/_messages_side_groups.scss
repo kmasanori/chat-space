@@ -1,6 +1,6 @@
 .groups {
-  @include __base(calc(100vh - 100px), auto, #2f3e51);
-  padding: $sidePadding;
+  @include __base(calc(100vh - 100px), auto, $side_blue_light);
+  padding: $side_padding;
   padding-top: 20px;
 }
 
@@ -9,10 +9,10 @@
   @include __base(auto, auto, transparent);
   margin-bottom: 40px;
   &__name {
-    @include __font(15px, $whiteColor, bold);
+    @include __font(15px, $white, bold);
     margin-bottom: 5px;
   }
   &__message {
-    @include __font(11px, $whiteColor, bold);
+    @include __font(11px, $white, bold);
   }
 }
