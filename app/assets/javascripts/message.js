@@ -1,45 +1,4 @@
 $(function(){
-
-  // function buildHTML(message){
-  //   if ( message.image ) {
-  //     var html =
-  //      `<div class="message" data-message-id=${message.id}>
-  //         <div class="upper-message">
-  //           <div class="upper-message__user-name">
-  //             ${message.user_name}
-  //           </div>
-  //           <div class="upper-message__date">
-  //             ${message.created_at}
-  //           </div>
-  //         </div>
-  //         <div class="lower-message">
-  //           <p class="lower-message__content">
-  //             ${message.content}
-  //           </p>
-  //         </div>
-  //         <img src=${message.image} >
-  //       </div>`
-  //     return html;
-  //   } else {
-  //     var html =
-  //      `<div class="message" data-message-id=${message.id}>
-  //         <div class="upper-message">
-  //           <div class="upper-message__user-name">
-  //             ${message.user_name}
-  //           </div>
-  //           <div class="upper-message__date">
-  //             ${message.created_at}
-  //           </div>
-  //         </div>
-  //         <div class="lower-message">
-  //           <p class="lower-message__content">
-  //             ${message.content}
-  //           </p>
-  //         </div>
-  //       </div>`
-  //     return html;
-  //   }
-  // }
   var buildHTML = function(message) {
     if (message.content && message.image) {
       //data-idが反映されるようにしている
@@ -148,7 +107,7 @@ $(function(){
       }
     })
     .fail(function() {
-      console.log('error');
+      alert("error")
     });
   };
   if (document.location.href.match(/\/groups\/\d+\/messages/)) {
