@@ -1,6 +1,6 @@
 .side-header {
-  @include __base(100px, auto, #253141);
-  padding: $sidePadding;
+  @include __base(100px, auto, $side_blue_dark);
+  padding: $side_padding;
   @include __align(flex, center);
 }
 
@@ -8,7 +8,7 @@
   @include __base(20px, 100%, transparent);
   @include __justify(flex, space-between);
   &__username {
-    @include __font(16px, $whiteColor, bold);
+    @include __font(16px, $white, bold);
   }
   &__menu {
     @include __base(auto, 60px, transparent);
@@ -17,7 +17,7 @@
       margin-left: 5px;
     }
     a {
-      color: $whiteColor;
+      color: $white;
     }
   }
 }

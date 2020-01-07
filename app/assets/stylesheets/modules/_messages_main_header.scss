@@ -1,7 +1,7 @@
 .header {
-  @include __base(100px, auto, $whiteColor);
-  padding: $mainPadding;
-  border-bottom: 1px solid #eeeeee;
+  @include __base(100px, auto, $white);
+  padding: $main_padding;
+  border-bottom: 1px solid $gray_white;
 }
 
 .header-box {
@@ -11,10 +11,10 @@
     @include __base(auto, auto, transparent);
     &__name {
       padding: 35px 0 15px;
-      @include __font(20px, $grayColor, normal);
+      @include __font(20px, $gray, normal);
     }
     &__member {
-      @include __font(12px, $silverColor, normal);
+      @include __font(12px, $light_gray, normal);
     }
   }
   &__btn {
@@ -22,8 +22,8 @@
     @include __base(38px, 70px, transparent);
     padding: 0 20px;
     margin-top: 30px;
-    border: 1px solid $blueColor;
-    @include __font(16px, $blueColor, normal);
+    border: 1px solid $light_blue;
+    @include __font(16px, $light_blue, normal);
     @include __font-center(38px, center);
   }    
 }
